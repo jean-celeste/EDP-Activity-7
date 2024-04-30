@@ -73,7 +73,7 @@ namespace EDP_GUI
                                 row["publisher_name"].ToString(),
                                 (row["publish_date"] != DBNull.Value) ? Convert.ToDateTime(row["publish_date"]).ToString("yyyy-MM-dd") : "",
                                 row["category_name"].ToString(),
-                                (row["price"] != DBNull.Value) ? Convert.ToDouble(row["price"]).ToString() : "", // Assuming price is a numeric field
+                                (row["price"] != DBNull.Value) ? Convert.ToDouble(row["price"]).ToString() : "",
                                 (row["copies"] != DBNull.Value) ? row["copies"].ToString() : ""
                             );
                         }
@@ -83,7 +83,6 @@ namespace EDP_GUI
             }
             catch (Exception ex)
             {
-                // Handle exceptions appropriately (e.g., log, display error message)
                 MessageBox.Show("Error loading data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
