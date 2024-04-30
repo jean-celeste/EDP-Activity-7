@@ -19,10 +19,6 @@ namespace EDP_GUI
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginSignupForm());
 
-            /*string connectionString = "Server=localhost;Database=books_db;User Id=root;Password=1234;";
-            DatabaseConnection dbConn = new DatabaseConnection(connectionString);
-            LoginSignupForm loginForm = new LoginSignupForm();
-            Application.Run(loginForm);*/
         }
     }
 }
